@@ -1,3 +1,4 @@
+#Float to binary
 
 def negativeBinary(binary_str):
     complement = binary_str.replace("0", "2").replace("1", "0").replace("2", "1")
