@@ -1,8 +1,8 @@
 #Float to binary
 
-def negativeBinary(binary_str):
-    complement = binary_str.replace("0", "2").replace("1", "0").replace("2", "1")
-    negative_value = bin(int(complement, 2) + 1)[2:]
+def negativeBinary(str):
+    flip = str.replace("0", "2").replace("1", "0").replace("2", "1")
+    negative_value = bin(int(flip, 2) + 1)[2:]
     return negative_value.zfill(8)
 
 FloatValue = float(input("Enter float value: "))
