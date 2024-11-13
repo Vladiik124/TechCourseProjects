@@ -44,7 +44,7 @@ for filename in os.listdir(folder_path):
                         print("Analysis in progress")
                         time.sleep(10)
                 else:
-                    print(f"Failed to report for {filename}. {report_response.status_code}")
+                    print(f"Failed to report {filename}. {report_response.status_code}")
                     break
         else:
             print(f"Failed to upload {filename}. {response.status_code}")
